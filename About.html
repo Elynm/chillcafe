@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="./img/pos.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+
+    <style>
+        a:link {
+            color: white;
+            background-color: transparent;
+            text-decoration: none;
+            font-family: cursive;
+        }
+
+        a:visited {
+            color: rgb(255, 255, 255);
+            background-color: transparent;
+            text-decoration: none;
+            font-family: cursive;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-radius: 10px;
+            background-color: #d573a5;
+        }
+
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: rgb(241, 17, 92);
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body background="./img/bg.jpg"
+    style="background-repeat:no-repeat; background-size: 100% 100% ; color: aliceblue;font-family: cursive">
+    <a href="index.html">Home</a>
+
+    <h1 align=center><i>About Chill Cafe</i></h1>
+
+    <p align=center> Chill Cafe is created to enjoy the chill music
+        created by Solee.
+    </p>
+
+    <h4 align=left> Solee genre in music are:</h4>
+    <table style="width: 100%">
+        <tr>
+            <th> Pop</th>
+            <th>Ballad</th>
+            <th>EDM</th>
+            <th>P-pop</th>
+            <th>J-pop</th>
+            <th>K-pop</th>
+        </tr>
+        <tr align="center">
+            <td>Taylor Swift</td>
+            <td>Billie Eilish</td>
+            <td>Alan Walker</td>
+            <td>Ben & Ben</td>
+            <td>Yoasobi</td>
+            <td>Red Velvet</td>
+        </tr>
+    </table>
+    <br>
+    If you want me to add more playlist comment it below:
+    <br>
+    <br>
+    <form ">
+        <label for=" name">Type your name: </label>
+        <br>
+
+        <input type=" text" name="name" value="name">
+        <br><br>
+
+        <label for="area">Your Suggestions:</label>
+        <br>
+
+        <textarea name="area" id="" cols=" 30" rows="10"></textarea>
+        <br>
+
+        <button type="submit"> Submit</button>
+        <br>
+    </form>
+    <br>
+    <iframe width="100%" height="200" src="https://www.youtube.com/embed/jfKfPfyJRdk?&autoplay=1"
+        title="lofi hip hop radio 📚 - beats to relax/study to" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+    <div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+        <script>
+            // Get the button
+            let mybutton = document.getElementById("myBtn");
+
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function () { scrollFunction() };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+    </div>
+</body>
+
+</html>
